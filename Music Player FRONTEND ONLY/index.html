@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Music</title>
+    <link rel="shortcut icon" href="images/facicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles/nav.css">
+    <link rel="stylesheet" href="styles/aside.css">
+    <link rel="stylesheet" href="styles/latest-release.css">
+    <link rel="stylesheet" href="styles/carousal.css">
+    <link rel="stylesheet" href="styles/stations.css">
+    <link rel="stylesheet" href="styles/musicplayer.css">
+    <link rel="stylesheet" href="styles/themes.css">
+    <link rel="stylesheet" href="styles/artists-modal-page.css">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <!-- // Navigation bar    | style file in nav.css-->
+    <nav>
+        <div class="nav-left">
+            <img src="images/logo.svg" alt="logo">
+            <h4>Favorites</h4>
+        </div>
+        <div class="nav-right">
+            <input placeholder="Search" type="text" name="search" id="search">
+            <div class="notification">
+                <p><i class="fa fa-bell-o" aria-hidden="true"></i></p>
+                <div id="notifications">
+                    <div class="default-message">
+                        <p><i class="fa fa-smile-o" aria-hidden="true"></i></p>
+                        <p>It's Empty. Come Back Later!</p>
+                    </div>
+                </div>
+            </div>
+            <img src="https://randomuser.me/api/portraits/women/43.jpg" alt="" srcset="">
+        </div>
+    </nav>
+
+    <!-- // the entire middle portion -->
+    <div class="container">
+
+        <!-- // this is a modal page appers when ever some one clicks on any one artist 
+        in section no 3   | style file in artists-modal-page.css-->
+        <section id="artist-modal-page">
+            <a href="#"><i class="fa fa-times" aria-hidden="true"></i></a>
+            <div class="artist-wall">
+                <img src="images/geazy.jpg" alt="">
+                <div class="artist-info">
+                    <h1>G eazy</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, 
+                        architecto quam. Laboriosam eius commodi rerum saepe sunt porro
+                         dolore dolorem at similique eum consequuntur nobis quos, 
+                         quidem repellat deleniti, distinctio dolor voluptate. Eligendi, 
+                         reiciendis veniam.</p>
+                    <div class="artist-buttons">
+                        <p>Play All</p>
+                        <p>Follow</p>
+                    </div>
+                    <p>124 Tracks | 20 Albums</p>
+                </div>
+            </div>
+            <div class="artist-songs">
+                <div class="artist-track">
+                    <audio src="#" style="display: hidden;"></audio>
+                    <div class="track-left">
+                        <p>01</p>
+                        <img src="https://randomuser.me/api/portraits/men/43.jpg" alt="">
+                        <div class="artist-track-info">
+                            <h4>Latinosa</h4>
+                            <p>Miximo</p>
+                        </div>
+                    </div>
+                    <div class="track-right">
+                        <p><i class="fa fa-heart-o" aria-hidden="true"></i></p>
+                        <p><i class="fa fa-plus" aria-hidden="true"></i></p>
+                    </div>
+                </div>
+                <div class="artist-track">
+                    <audio src="#" style="display: hidden;"></audio>
+                    <div class="track-left">
+                        <p>02</p>
+                        <img src="https://randomuser.me/api/portraits/men/42.jpg" alt="">
+                        <div class="artist-track-info">
+                            <h4>Me Myself & I</h4>
+                            <p>Bebe Rexha</p>
+                        </div>
+                    </div>
+                    <div class="track-right">
+                        <p><i class="fa fa-heart-o" aria-hidden="true"></i></p>
+                        <p><i class="fa fa-plus" aria-hidden="true"></i></p>
+                    </div>
+                </div>
+                <div class="artist-track">
+                    <audio src="#" style="display: hidden;"></audio>
+                    <div class="track-left">
+                        <p>03</p>
+                        <img src="https://randomuser.me/api/portraits/women/16.jpg" alt="">
+                        <div class="artist-track-info">
+                            <h4>Kisoma</h4>
+                            <p>Ollorpya</p>
+                        </div>
+                    </div>
+                    <div class="track-right">
+                        <p><i class="fa fa-heart-o" aria-hidden="true"></i></p>
+                        <p><i class="fa fa-plus" aria-hidden="true"></i></p>
+                    </div>
+                </div>
+                <div class="artist-track">
+                    <audio src="#" style="display: hidden;"></audio>
+                    <div class="track-left">
+                        <p>04</p>
+                        <img src="https://randomuser.me/api/portraits/women/49.jpg" alt="">
+                        <div class="artist-track-info">
+                            <h4>Gika</h4>
+                            <p>Kunao</p>
+                        </div>
+                    </div>
+                    <div class="track-right">
+                        <p><i class="fa fa-heart-o" aria-hidden="true"></i></p>
+                        <p><i class="fa fa-plus" aria-hidden="true"></i></p>
+                    </div>
+                </div>
+                <div class="artist-track">
+                    <audio src="#" style="display: hidden;"></audio>
+                    <div class="track-left">
+                        <p>05</p>
+                        <img src="https://randomuser.me/api/portraits/women/19.jpg" alt="">
+                        <div class="artist-track-info">
+                            <h4>Escito</h4>
+                            <p>De pasa</p>
+                        </div>
+                    </div>
+                    <div class="track-right">
+                        <p><i class="fa fa-heart-o" aria-hidden="true"></i></p>
+                        <p><i class="fa fa-plus" aria-hidden="true"></i></p>
+                    </div>
+                </div>
+                <div class="artist-track">
+                    <audio src="#" style="display: hidden;"></audio>
+                    <div class="track-left">
+                        <p>06</p>
+                        <img src="https://randomuser.me/api/portraits/men/31.jpg" alt="">
+                        <div class="artist-track-info">
+                            <h4>Mr Flex</h4>
+                            <p>Layout</p>
+                        </div>
+                    </div>
+                    <div class="track-right">
+                        <p><i class="fa fa-heart-o" aria-hidden="true"></i></p>
+                        <p><i class="fa fa-plus" aria-hidden="true"></i></p>
+                    </div>
+                </div>
+                <div class="artist-track">
+                    <audio src="#" style="display: hidden;"></audio>
+                    <div class="track-left">
+                        <p>06</p>
+                        <img src="https://randomuser.me/api/portraits/men/23.jpg" alt="">
+                        <div class="artist-track-info">
+                            <h4>SASS</h4>
+                            <p>Grid System</p>
+                        </div>
+                    </div>
+                    <div class="track-right">
+                        <p><i class="fa fa-heart-o" aria-hidden="true"></i></p>
+                        <p><i class="fa fa-plus" aria-hidden="true"></i></p>
+                    </div>
+                </div>
+                <div class="artist-track">
+                    <audio src="#" style="display: hidden;"></audio>
+                    <div class="track-left">
+                        <p>07</p>
+                        <img src="https://randomuser.me/api/portraits/men/16.jpg" alt="">
+                        <div class="artist-track-info">
+                            <h4>Ml</h4>
+                            <p>Countdown</p>
+                        </div>
+                    </div>
+                    <div class="track-right">
+                        <p><i class="fa fa-heart-o" aria-hidden="true"></i></p>
+                        <p><i class="fa fa-plus" aria-hidden="true"></i></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- // the playlist that appers on the side   | style file in aside.css-->
+        <aside id="aside">
+            <div class="aside-head">
+                <h1>My PlayList</h1>
+                <div>
+                    <a href="#aside">Queue <i class="fa fa-caret-down" aria-hidden="true"></i></a>&nbsp;&nbsp;
+                    <div>
+                        <a href="#">Playlists</a>
+                        <a href="#">My Songs</a>
+                    </div>
+                </div>
+                <a href="#"><i class="fa fa-times" aria-hidden="true"></i></a>
+            </div>
+            <div class="aside-content">
+                <div class="aside-card">
+                    <audio style="display: hidden;" src=""></audio>
+                    <p>01</p>
+                    <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="">
+                    <div class="aside-card-text">
+                        <h4>Livona</h4>
+                        <p>Exotica</p>
+                    </div>
+                    <p><i class="fa fa-heart-o" aria-hidden="true"></i></p>
+                </div>
+                <div class="aside-card">
+                    <audio style="display: hidden;" src=""></audio>
+                    <p><i class="fa fa-pause" aria-hidden="true"></i></p>
+                    <img src="https://randomuser.me/api/portraits/women/33.jpg" alt="">
+                    <div class="aside-card-text">
+                        <h4>Kelly</h4>
+                        <p>Love Me/ Hate Me</p>
+                    </div>
+                    <p><i class="fa fa-heart-o" aria-hidden="true"></i></p>
+                </div>
+                <div class="aside-card">
+                    <audio style="display: hidden;" src=""></audio>
+                    <p>03</p>
+                    <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="">
+                    <div class="aside-card-text">
+                        <h4>Drezel</h4>
+                        <p>Havino</p>
+                    </div>
+                    <p><i class="fa fa-heart-o" aria-hidden="true"></i></p>
+                </div>
+                <div class="aside-card">
+                    <audio style="display: hidden;" src=""></audio>
+                    <p>04</p>
+                    <img src="https://randomuser.me/api/portraits/men/39.jpg" alt="">
+                    <div class="aside-card-text">
+                        <h4>Ramlal</h4>
+                        <p>Tantra-Bidya</p>
+                    </div>
+                    <p><i class="fa fa-heart-o" aria-hidden="true"></i></p>
+                </div>
+                <div class="aside-card">
+                    <audio style="display: hidden;" src=""></audio>
+                    <p>05</p>
+                    <img src="https://randomuser.me/api/portraits/men/40.jpg" alt="">
+                    <div class="aside-card-text">
+                        <h4>Ezio</h4>
+                        <p>Tio - MINA</p>
+                    </div>
+                    <p><i class="fa fa-heart-o" aria-hidden="true"></i></p>
+                </div>
+                <div class="aside-card">
+                    <audio style="display: hidden;" src=""></audio>
+                    <p>06</p>
+                    <img src="https://randomuser.me/api/portraits/men/43.jpg" alt="">
+                    <div class="aside-card-text">
+                        <h4>Maxwell</h4>
+                        <p>Bull Dog</p>
+                    </div>
+                    <p><i class="fa fa-heart-o" aria-hidden="true"></i></p>
+                </div>
+                <div class="aside-card">
+                    <audio style="display: hidden;" src=""></audio>
+                    <p>01</p>
+                    <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="">
+                    <div class="aside-card-text">
+                        <h4>Livona</h4>
+                        <p>Exotica</p>
+                    </div>
+                    <p><i class="fa fa-heart-o" aria-hidden="true"></i></p>
+                </div>
+                <div class="aside-card">
+                    <audio style="display: hidden;" src=""></audio>
+                    <p><i class="fa fa-pause" aria-hidden="true"></i></p>
+                    <img src="https://randomuser.me/api/portraits/women/33.jpg" alt="">
+                    <div class="aside-card-text">
+                        <h4>Kelly</h4>
+                        <p>Love Me/ Hate Me</p>
+                    </div>
+                    <p><i class="fa fa-heart-o" aria-hidden="true"></i></p>
+                </div>
+                <div class="aside-card">
+                    <audio style="display: hidden;" src=""></audio>
+                    <p>03</p>
+                    <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="">
+                    <div class="aside-card-text">
+                        <h4>Drezel</h4>
+                        <p>Havino</p>
+                    </div>
+                    <p><i class="fa fa-heart-o" aria-hidden="true"></i></p>
+                </div>
+                <div class="aside-card">
+                    <audio style="display: hidden;" src=""></audio>
+                    <p>04</p>
+                    <img src="https://randomuser.me/api/portraits/men/39.jpg" alt="">
+                    <div class="aside-card-text">
+                        <h4>Ramlal</h4>
+                        <p>Tantra-Bidya</p>
+                    </div>
+                    <p><i class="fa fa-heart-o" aria-hidden="true"></i></p>
+                </div>
+                <div class="aside-card">
+                    <audio style="display: hidden;" src=""></audio>
+                    <p>05</p>
+                    <img src="https://randomuser.me/api/portraits/men/40.jpg" alt="">
+                    <div class="aside-card-text">
+                        <h4>Ezio</h4>
+                        <p>Tio - MINA</p>
+                    </div>
+                    <p><i class="fa fa-heart-o" aria-hidden="true"></i></p>
+                </div>
+                <div class="aside-card">
+                    <audio style="display: hidden;" src=""></audio>
+                    <p>06</p>
+                    <img src="https://randomuser.me/api/portraits/men/43.jpg" alt="">
+                    <div class="aside-card-text">
+                        <h4>Maxwell</h4>
+                        <p>Bull Dog</p>
+                    </div>
+                    <p><i class="fa fa-heart-o" aria-hidden="true"></i></p>
+                </div>
+            </div>
+        </aside>
+
+        <!-- // this is used to show the playlist in mobile (responsive mode) -->
+        <a href="#aside"><i class="fa fa-caret-left" aria-hidden="true"></i></a>
+        <main>
+
+            <!-- // basically this is the carousal design   | style file in carousal.css-->
+            <section id="slider">
+                <input type="radio" name="slider" id="s1" checked>
+                <input type="radio" name="slider" id="s2">
+                <input type="radio" name="slider" id="s3">
+                
+                <label for="s1" id="slide1"><img src="images/cover1bg.png" alt=""></label>
+                <label for="s2" id="slide2"><img src="images/cover2bg.jpg" alt="" srcset=""></label>
+                <label for="s3" id="slide3"><img src="images/cover3bg.jpg" alt="" srcset=""></label>
+            </section>
+
+            <!-- shows all the latest albums   | style file in latest-release.css -->
+            <section id="latest">
+                <h2>Latest Release</h2>
+                <div class="latest-display">
+                    <div class="release-card">
+                        <audio style="display: hidden;" src=""></audio>
+                        <img src="https://randomuser.me/api/portraits/women/43.jpg" alt="">
+                        <div class="release-text">
+                            <h4>Roxy</h4>
+                            <p>Me Not Blond</p>
+                        </div>
+                        <div class="release-memu">
+                            <a href="#"><i class="fa fa-caret-down" aria-hidden="true"></i></a>&nbsp;&nbsp;
+                            <div>
+                                <a href="#"><i class="fa fa-play" aria-hidden="true"></i>&nbsp;&nbsp;Play Now</a>
+                                <a href="#"><i class="fa fa-plus" aria-hidden="true"></i>&nbsp;&nbsp;Add To Queue</a>
+                                <a href="#"><i class="fa fa-bookmark" aria-hidden="true"></i>&nbsp;&nbsp;Add To Favorites</a>
+                                <a href="#"><i class="fa fa-info-circle" aria-hidden="true"></i>&nbsp;&nbsp;Get Info</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="release-card">
+                        <audio style="display: hidden;" src=""></audio>
+                        <img src="https://randomuser.me/api/portraits/women/50.jpg" alt="">
+                        <div class="release-text">
+                            <h4>Chin-lin</h4>
+                            <p>Ku Ki</p>
+                        </div>
+                        <div class="release-memu">
+                            <a href="#"><i class="fa fa-caret-down" aria-hidden="true"></i></a>&nbsp;&nbsp;
+                            <div>
+                                <a href="#"><i class="fa fa-play" aria-hidden="true"></i>&nbsp;&nbsp;Play Now</a>
+                                <a href="#"><i class="fa fa-plus" aria-hidden="true"></i>&nbsp;&nbsp;Add To Queue</a>
+                                <a href="#"><i class="fa fa-bookmark" aria-hidden="true"></i>&nbsp;&nbsp;Add To Favorites</a>
+                                <a href="#"><i class="fa fa-info-circle" aria-hidden="true"></i>&nbsp;&nbsp;Get Info</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="release-card">
+                        <audio style="display: hidden;" src=""></audio>
+                        <img src="https://randomuser.me/api/portraits/men/43.jpg" alt="">
+                        <div class="release-text">
+                            <h4>Maxwell</h4>
+                            <p>Bull Dog</p>
+                        </div>
+                        <div class="release-memu">
+                            <a href="#"><i class="fa fa-caret-down" aria-hidden="true"></i></a>&nbsp;&nbsp;
+                            <div>
+                                <a href="#"><i class="fa fa-play" aria-hidden="true"></i>&nbsp;&nbsp;Play Now</a>
+                                <a href="#"><i class="fa fa-plus" aria-hidden="true"></i>&nbsp;&nbsp;Add To Queue</a>
+                                <a href="#"><i class="fa fa-bookmark" aria-hidden="true"></i>&nbsp;&nbsp;Add To Favorites</a>
+                                <a href="#"><i class="fa fa-info-circle" aria-hidden="true"></i>&nbsp;&nbsp;Get Info</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="release-card">
+                        <audio style="display: hidden;" src=""></audio>
+                        <img src="https://randomuser.me/api/portraits/men/20.jpg" alt="">
+                        <div class="release-text">
+                            <h4>Salimon</h4>
+                            <p>Latino Me</p>
+                        </div>
+                        <div class="release-memu">
+                            <a href="#"><i class="fa fa-caret-down" aria-hidden="true"></i></a>&nbsp;&nbsp;
+                            <div>
+                                <a href="#"><i class="fa fa-play" aria-hidden="true"></i>&nbsp;&nbsp;Play Now</a>
+                                <a href="#"><i class="fa fa-plus" aria-hidden="true"></i>&nbsp;&nbsp;Add To Queue</a>
+                                <a href="#"><i class="fa fa-bookmark" aria-hidden="true"></i>&nbsp;&nbsp;Add To Favorites</a>
+                                <a href="#"><i class="fa fa-info-circle" aria-hidden="true"></i>&nbsp;&nbsp;Get Info</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- all the artists a modal also available on click   | style file in style.css-->
+            <section id="artists">
+                <h1>Popular Artists</h1>
+                <div class="artists-display">
+                    <div class="artist-card">
+                        <a href="#artist-modal-page"><img src="images/ariana.jpg" alt=""></a>
+                        <h4>Ariana</h4>
+                    </div>
+                    <div class="artist-card">
+                        <a href="#artist-modal-page"><img src="images/chrisbrown.jpg" alt=""></a>
+                        <h4>Chris Brown</h4>
+                    </div>
+                    <div class="artist-card">
+                        <a href="#artist-modal-page"><img src="images/geazy.jpg" alt=""></a>
+                        <h4>G eazy</h4>
+                    </div>
+                    <div class="artist-card">
+                        <a href="#artist-modal-page"><img src="images/noahboat.jfif" alt=""></a>
+                        <h4>Noah Boat</h4>
+                    </div>
+                    <div class="artist-card">
+                        <a href="#artist-modal-page"><img src="images/beberexha.jpg" alt=""></a>
+                        <h4>Bebe Rexha</h4>
+                    </div>
+                    <div class="artist-card">
+                        <a href="#artist-modal-page"><img src="images/cmg.jpg" alt=""></a>
+                        <h4>CMG</h4>
+                    </div>
+                </div>
+
+                <!-- <a href="#playlist-section"> Go to playlist</a> -->
+            </section>
+
+            <!-- all the available stations of music player  | style file in stations.css -->
+            <section id="stations">
+                <div class="img">
+                    <img src="images/love.jfif" alt="">
+                    <h1>Love</h1>
+                </div>
+                <div class="img">
+                    <img src="images/retro.jpg" alt="">
+                    <h1>Retro</h1>
+                </div>
+                <div class="img">
+                    <img src="images/chill.jpg" alt="">
+                    <h1>Chill</h1>
+                </div>
+                <div class="img">
+                    <img src="images/workout.jfif" alt="">
+                    <h1>Workout</h1>
+                </div>
+                <div class="img">
+                    <img src="images/pop.jpg" alt="">
+                    <h1>Pop</h1>
+                </div>
+            </section>
+
+            <!-- all the theme of music | style file in themes.css-->
+            <section id="themes">
+                <div class="theme">
+                    <h1>Party</h1>
+                    <img src="images/party.jpg" alt="">
+                </div>
+                <div class="theme">
+                    <h1>Electronic</h1>
+                    <img src="images/electronic.jpg" alt="">
+                </div>
+                <div class="theme">
+                    <h1>Road Trip</h1>
+                    <img src="images/roadtrip.jpg" alt="">
+                </div>
+            </section>
+
+            <!-- trending english songs  | style file in style.css--> 
+            <section id="latest-lang">
+                <h2>Latest English</h2>
+                <div class="latest-display">
+                    <div class="latest-card">
+                        <audio src="" style="display: hidden;"></audio>
+                        <img src="https://randomuser.me/api/portraits/women/43.jpg" alt="">
+                        <h4>Roxy</h4>
+                        <p>17 - Aug - 2020</p>
+                    </div>
+                    <div class="latest-card">
+                        <audio src="" style="display: hidden;"></audio>
+                        <img src="https://randomuser.me/api/portraits/women/10.jpg" alt="">
+                        <h4>Dia</h4>
+                        <p>18 - Aug - 2020</p>
+                    </div>
+                    <div class="latest-card">
+                        <audio src="" style="display: hidden;"></audio>
+                        <img src="https://randomuser.me/api/portraits/men/2.jpg" alt="">
+                        <h4>Sixom</h4>
+                        <p>17 - Sept - 2020</p>
+                    </div>
+                    <div class="latest-card">
+                        <audio src="" style="display: hidden;"></audio>
+                        <img src="https://randomuser.me/api/portraits/women/3.jpg" alt="">
+                        <h4>Bilai</h4>
+                        <p>17 - Jul - 2020</p>
+                    </div>
+                    <div class="latest-card">
+                        <audio src="" style="display: hidden;"></audio>
+                        <img src="https://randomuser.me/api/portraits/men/4.jpg" alt="">
+                        <h4>Beans</h4>
+                        <p>12 - Aug - 2020</p>
+                    </div>
+                    <div class="latest-card">
+                        <audio src="" style="display: hidden;"></audio>
+                        <img src="https://randomuser.me/api/portraits/women/5.jpg" alt="">
+                        <h4>Girly</h4>
+                        <p>11 - Aug - 2020</p>
+                    </div>
+                    <div class="latest-card">
+                        <audio src="" style="display: hidden;"></audio>
+                        <img src="https://randomuser.me/api/portraits/men/6.jpg" alt="">
+                        <h4>Taku</h4>
+                        <p>17 - Aug - 2020</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- trending hindi songs   | style file in style.css-->
+            <section id="latest-lang" style="padding-bottom: 100px;">
+                <h2>Latest Hindi</h2>
+                <div class="latest-display">
+                    <div class="latest-card">
+                        <audio src="" style="display: hidden;"></audio>
+                        <img src="https://randomuser.me/api/portraits/men/39.jpg" alt="">
+                        <h4>Raja</h4>
+                        <p>17 - Aug - 2020</p>
+                    </div>
+                    <div class="latest-card">
+                        <audio src="" style="display: hidden;"></audio>
+                        <img src="https://randomuser.me/api/portraits/men/40.jpg" alt="">
+                        <h4>Binod</h4>
+                        <p>18 - Aug - 2020</p>
+                    </div>
+                    <div class="latest-card">
+                        <audio src="" style="display: hidden;"></audio>
+                        <img src="https://randomuser.me/api/portraits/men/41.jpg" alt="">
+                        <h4>Tiku</h4>
+                        <p>17 - Sept - 2020</p>
+                    </div>
+                    <div class="latest-card">
+                        <audio src="" style="display: hidden;"></audio>
+                        <img src="https://randomuser.me/api/portraits/men/42.jpg" alt="">
+                        <h4>Singhji</h4>
+                        <p>17 - Jul - 2020</p>
+                    </div>
+                    <div class="latest-card">
+                        <audio src="" style="display: hidden;"></audio>
+                        <img src="https://randomuser.me/api/portraits/men/43.jpg" alt="">
+                        <h4>Najim</h4>
+                        <p>12 - Aug - 2020</p>
+                    </div>
+                    <div class="latest-card">
+                        <audio src="" style="display: hidden;"></audio>
+                        <img src="https://randomuser.me/api/portraits/men/44.jpg" alt="">
+                        <h4>Mittum</h4>
+                        <p>11 - Aug - 2020</p>
+                    </div>
+                    <div class="latest-card">
+                        <audio src="" style="display: hidden;"></audio>
+                        <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="">
+                        <h4>Jakim</h4>
+                        <p>17 - Aug - 2020</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- // the music player css file is musicplayer.css -->
+    <footer>
+        <div class="play-info">
+            <img src="https://randomuser.me/api/portraits/men/62.jpg" alt="">
+            <div class="play-info-text">
+                <h4>Diamante</h4>
+                <p>Salania</p>
+            </div>
+            <p><i class="fa fa-heart-o" aria-hidden="true"></i></p>
+            <p><i class="fa fa-ban" aria-hidden="true"></i></p>
+        </div>
+        <div class="play-box">
+            <div class="play-controls">
+                <p><i class="fa fa-random" aria-hidden="true"></i></p>
+                <p><i class="fa fa-backward" aria-hidden="true"></i></p>
+                <p><i class="fa fa-pause-circle-o" aria-hidden="true"></i></p>
+                <p><i class="fa fa-forward" aria-hidden="true"></i></p>
+                <p><i class="fa fa-repeat" aria-hidden="true"></i></p>
+            </div>
+            <div class="play-slider">
+                <p>1:20</p>
+                <input type="range" min="1" max="100" value="40" class="slider" id="myRange">
+                <p>3:00</p>
+            </div>
+        </div>
+        <div class="play-right">
+            <p><i class="fa fa-list" aria-hidden="true"></i></p>
+            <p><i class="fa fa-television" aria-hidden="true"></i></p>
+            <p><i class="fa fa-volume-up" aria-hidden="true"></i></p>
+            <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+            <p><i class="fa fa-expand" aria-hidden="true"></i></p>
+        </div>
+    </footer>
+
+
+
+    <!-- // later js script file -->
+</body>
+</html>
